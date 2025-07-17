@@ -1,0 +1,132 @@
+.container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #ffffff, #f0f2f5);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+input[type='number'] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-width: 160px;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+input[type='number']:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+}
+
+.form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.error,
+.success {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.success {
+  color: #2ecc71;
+}
+
+.instanceList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  padding: 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  margin: 0.5rem 0;
+  color: #34495e;
+  font-size: 1rem;
+}
+
+.card strong {
+  color: #2c3e50;
+}
+
+.card button {
+  margin-top: 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #c0392b;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}

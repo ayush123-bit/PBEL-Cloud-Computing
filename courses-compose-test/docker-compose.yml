@@ -1,0 +1,10 @@
+services:
+  backend:
+    image: ayushrai3108/courses-backend
+    ports:
+      - "8080:8080"
+
+  frontend:
+    image: ayushrai3108/courses-frontend
+    ports:
+      - "3000:80"
